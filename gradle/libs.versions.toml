@@ -1,0 +1,32 @@
+[versions]
+agp = "8.1.2"
+grpc-protobuf-lite = "1.47.0"
+grpc-stub = "1.47.0"
+annotations-api = "6.0.53"
+org-jetbrains-kotlin-android = "1.9.0"
+core-ktx = "1.12.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+protobuf-gradle-plugin = "0.9.4"
+
+[libraries]
+annotations-api = { module = "org.apache.tomcat:annotations-api", version.ref = "annotations-api" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpc-protobuf-lite" }
+grpc-protobuf-lite = { module = "io.grpc:grpc-protobuf-lite", version.ref = "grpc-protobuf-lite" }
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpc-stub" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+protobuf-gradle-plugin = { id = "com.google.protobuf", version.ref = "protobuf-gradle-plugin" }
+[bundles]
+
