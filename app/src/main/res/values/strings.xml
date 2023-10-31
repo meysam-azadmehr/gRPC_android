@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">gPRc_android</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="name_hint">hint\n\n</string>
+    <string name="send_request">send_request</string>
+    <string name="server_response">server_response</string>
 </resources>
