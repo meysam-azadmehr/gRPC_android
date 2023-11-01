@@ -93,7 +93,7 @@ class MainViewModel: ViewModel() {
     fun sendWithRequests(){
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                updateResult(sendMessageWithRequests(channel).toString())
+//                updateResult(sendMessageWithRequests(channel).toString())
             } catch (e: Exception) {
                 updateResult(e.message?:"")
             }
@@ -103,7 +103,7 @@ class MainViewModel: ViewModel() {
     fun sendWithBidirectionalMessage(){
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                updateResult(sendMessageBiDirectional(channel).toString())
+//                updateResult(sendMessageBiDirectional(channel).toString())
             } catch (e: Exception) {
                 updateResult(e.message?:"")
             }
